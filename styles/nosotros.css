@@ -1,0 +1,752 @@
+@import url(./styles.css);
+
+/* Estilos de la barra de navegación */
+.encabezado {
+  height: 60px;
+  width: 100%;
+  max-width: 1200px;
+  background-color: var(--oscuro-400);
+  position: fixed;
+  z-index: 300;
+}
+
+.nav {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  padding: var(--padding-10);
+  align-items: center;
+  gap: var(--padding-10);
+  z-index: 300;
+}
+
+.logo {
+  transition: all 0.1s ease-in-out;
+  width: 50px;
+  border-radius: 10px;
+  order: 1;
+  display: grid;
+  place-content: center;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.nav-menu {
+  display: grid;
+  place-content: center;
+  gap: var(--padding-20);
+  position: fixed;
+  background-color: var(--primario-100);
+  height: 100%;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  list-style: none;
+}
+
+.nav-menu-item {
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-size: 21px;
+  font-weight: bold;
+  transition: all 0.02 ease-in-out;
+  color: var(--oscuro-400);
+  transition: background-color 0.2s ease-in-out;
+  border-radius: var(--padding-10);
+  padding: var(--padding-10);
+
+}
+
+.nav-menu-item:hover {
+  background-color: var(--secundario-200);
+  border-radius: var(--padding-10);
+  padding: var(--padding-10);
+  color: var(--oscuro-400);
+}
+
+.menu-hamburguesa {
+  color: var(--negro);
+  order: 1;
+  border: solid 1px var(--secundario-200);
+  border-radius: 100%;
+  background-color: var(--secundario-100);
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.buscar-contenedor {
+  position: relative;
+  display: flex;
+  width: 40px;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.buscar-contenedor label {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  transition: all 0.2s ease-in-out;
+  display: grid;
+  place-content: center;
+
+}
+
+.inputBuscador {
+  background-color: transparent;
+  border-radius: 8px;
+  width: 100%;
+  height: 40px;
+  padding: 0 5px;
+  border: 1px solid transparent;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.show-input {
+  border-color: var(--gris);
+  background-color: var(--blanco);
+}
+
+.bx-search {
+  color: var(--primario-200);
+  font-size: 24px;
+}
+
+.bx-chevrons-left {
+  font-size: 40px;
+}
+
+#btnSearchContact {
+  display: none;
+  border-radius: 8px;
+  width: 120px;
+  height: 36px;
+  justify-content: center;
+  font-size: 20px;
+  border: none;
+  color: var(--secundario-300);
+  background: #F2FFFB;
+  padding: 0 10px;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.bx-chevron-down {
+  font-size: 30px;
+}
+
+.boton-cerrar-menu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.mostrar-menu {
+  right: 0;
+  background-color: #8db4f754;
+  backdrop-filter: blur(10px);
+}
+
+.nav-activo {
+  color: var(--primario-300);
+}
+
+/* Finaliza estilos de la barra de navegación */
+
+/* sección acerca de nosotros  */
+.encabezadoNosotros {
+  margin-top: 60px;
+  z-index: 10;
+  padding: var(--padding-20);
+}
+
+.encabezadoNosotros h1 {
+  color: var(--primario-300);
+  text-align: center;
+  font-family: 'Ubuntu';
+  font-size: 40px;
+  line-height: 100%;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.encabezadoNosotros h3 {
+  color: var(--oscuro-300);
+  font-family: "Josefin Sans";
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.encabezadoNosotros p {
+  flex-shrink: 0;
+  color: var(--oscuro-300);
+  line-height: 26px;
+}
+
+.encabezadoNosotros .botones a {
+  color: white;
+  display: flex;
+  width: 220px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: var(--padding-10);
+  border-radius: 8px;
+  background: var(--primario-200);
+  border: solid 2px transparent;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.encabezadoNosotros a:hover {
+  border: 2px solid var(--primario-300);
+  color: var(--primario-400);
+  background-color: transparent;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: center;
+}
+
+.imagen-gris {
+  background: rgba(217, 217, 217, 0.46);
+  height: 40vw;
+  width: 80vw;
+  border-radius: var(--padding-30);
+  position: relative;
+  margin: 60px auto;
+}
+
+.imagen-1 {
+  width: 50%;
+  border-radius: var(--padding-10);
+  background: var(--gris) 50% / cover no-repeat, #d9d9d9;
+  position: absolute;
+  bottom: -30px;
+  left: -15px;
+}
+
+.imagen-2 {
+  width: 50%;
+  border-radius: 10px;
+  background: var(--gris) 50% / cover no-repeat, #d9d9d9;
+  position: absolute;
+  top: -30px;
+  right: -15px;
+}
+
+.btn-top {
+  display: none;
+}
+
+.btn-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--padding-10);
+
+}
+
+/* Finaliza sección acerca de nosotros  */
+
+/* sección mision vision valores */
+
+.seccion-mision-vision-valores {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(320, 1fr));
+  gap: var(--padding-20);
+  width: 100%;
+}
+
+.tarjeta {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: var(--padding-10);
+  width: 300px;
+  height: 550px;
+  text-align: center;
+}
+
+.tarjeta p {
+  color: var(--oscuro-100);
+}
+
+.tarjeta.tarjeta.valores img {
+  width: 100%;
+}
+
+.tarjeta.mision {
+  background-color: #f2fff1;
+}
+
+.tarjeta.tarjeta.mision img {
+  width: 35%;
+  border-radius: 5px;
+  margin: 1em 0;
+}
+
+.tarjeta.mision h2 {
+  color: #259d19;
+  text-align: center;
+}
+
+.tarjeta.vision {
+  background-color: #f0f0ff;
+}
+
+.tarjeta.vision h2 {
+  color: #e3a11f;
+  text-align: center;
+}
+
+.tarjeta.tarjeta.vision img {
+  width: 35%;
+  border-radius: 5px;
+  margin: 1em 0;
+}
+
+.tarjeta.valores {
+  background-color: #fff3e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: var(--padding-20);
+}
+
+.tarjeta.valores h2 {
+  color: #171a8f;
+  text-align: center;
+}
+
+/* Finaliza sección mision vision valores */
+
+/* Sección equipo de trabajo */
+
+.contenedor-equipo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-20);
+  place-content: center;
+}
+
+.contenedor-equipo>h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #0E877D;
+  font-family: 'Ubuntu';
+}
+
+.contenedor-persona {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-top: var(--padding-30);
+}
+
+.info-equipo {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px 1px rgba(14, 1, 87, 0.5);
+}
+
+.img-equipo {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  padding: var(--padding-10);
+}
+
+.img-equipo:hover p {
+  top: 50%;
+}
+
+.edwar {
+  background: url(../public/images/edwar-leon.png);
+}
+
+.vanessa {
+  background: url(../public/images/vanessa-mora1.png);
+}
+
+.mateo {
+  background: url(../public/images/mateo-castro.png);
+}
+
+.yuli {
+  background: url(../public/images/yuli-leon.png);
+}
+
+.equipo {
+  text-align: center;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--padding-10);
+}
+
+.equipo h3 {
+  font-size: 28px;
+  font-family: 'Josefin Sans';
+}
+
+.equipo p {
+  position: absolute;
+  color: var(--blanco);
+  font-size: 14px;
+  top: 150%;
+  left: 0;
+  translate: 0 -50%;
+  background-color: #1c202f79;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  padding: 20px;
+}
+
+/* Finaliza Sección Equipo de Trabajo/*
+
+/* seccion pie de pagina  */
+
+.pie-pagina {
+  background-color: var(--oscuro-400);
+  color: white;
+  padding: 2em 0;
+  text-align: center;
+  width: 100%;
+}
+
+.contenedor-piepagina {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 1em;
+}
+
+.columnaContactoLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.columnaContacto,
+.columnaInstitucional {
+  min-width: 200px;
+  padding: var(--padding-10);
+}
+
+.columnaContacto ul,
+.columnaInstitucional ul {
+  list-style: none;
+}
+
+.columnaContacto ul li,
+.columnaInstitucional ul li {
+  margin: 0.5em 0;
+  display: flex;
+  align-items: center;
+}
+
+.columnaContacto ul li a,
+.columnaInstitucional ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.columnaContacto ul li a:hover,
+.columnaInstitucional ul li a:hover {
+  text-decoration: underline;
+}
+
+.columnaContacto ul li i,
+.columnaInstitucional ul li a i {
+  margin-right: 0.5em;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.redes-sociales a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.5em;
+  font-size: 1.5em;
+}
+
+.redes-sociales a:hover {
+  color: var(--primario-200);
+}
+
+.derechos {
+  width: 100%;
+  margin-top: var(--padding-10);
+}
+
+.derechos p {
+  font-size: 14px;
+}
+
+.columnaLogo {
+  width: 200px;
+  height: 150px;
+
+}
+
+.columnaLogo img {
+  width: 100%;
+}
+
+/* Finaliza seccion pie de pagina  */
+
+
+@media(min-width: 744px) {
+
+  /* Estilos de la barra de navegación */
+  .encabezado {
+    height: 80px;
+  }
+
+  .mostrar-menu {
+    right: 0;
+    width: 40%;
+  }
+
+  .menu-hamburguesa {
+    width: 44px;
+    height: 44px;
+  }
+
+  .bx-menu {
+    font-size: 30px;
+  }
+
+  .logo {
+    order: -1;
+    width: 70px;
+    height: 58px;
+    border-radius: 10px;
+  }
+
+  .buscar-contenedor {
+    width: 367px;
+    justify-content: center;
+    border: 1px solid var(--gris);
+    background-color: var(--blanco);
+  }
+
+  .bx-search {
+    color: var(--gris);
+  }
+
+  .buscar-contenedor label {
+    left: 6%;
+  }
+
+  #buscar-boton {
+    display: flex;
+  }
+
+  .inputBuscador:focus+label {
+    display: none;
+  }
+
+  .nav-activo {
+    color: var(--primario-300);
+  }
+
+  /* Finaliza estilos de la barra de navegación */
+
+  /* sección acerca de nosotros  */
+
+  .encabezadoNosotros {
+    margin-top: 80px;
+  }
+
+  .imagen-gris {
+    width: 70vw;
+  }
+
+  .btn-top {
+    display: flex;
+    gap: var(--padding-10);
+
+  }
+
+  .btn-bottom {
+    display: none;
+  }
+
+  .encabezadoNosotros button {
+    display: inline-flex;
+  }
+
+  /* Finaliza sección acerca de nosotros  */
+
+  /* seccion mision, vision y valores  */
+
+  .seccion-mision-vision-valores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--padding-30);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tarjeta {
+    width: 45%;
+  }
+
+  /* Finaliza seccion mision, vision y valores  */
+
+  /* Sección footer  */
+
+  .pie-pagina {
+    padding: var(--padding-10);
+  }
+
+  .contenedor-piepagina {
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+
+  /* Finaliza Sección footer  */
+}
+
+@media(min-width: 1200px) {
+
+  /* Estilos de la barra de navegación */
+
+  .nav {
+    justify-content: space-around;
+  }
+
+  .nav-menu {
+    background: transparent;
+    position: static;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    gap: var(--padding-30);
+    align-items: center;
+  }
+
+  .nav-menu-item {
+    font-size: 20px;
+    color: var(--blanco);
+  }
+
+  .buscar-contenedor label {
+    left: 7%;
+  }
+
+  .menu-hamburguesa,
+  .boton-cerrar-menu {
+    display: none;
+  }
+
+  .logo {
+    order: -1;
+  }
+
+  .buscar-contenedor {
+    order: 1;
+
+  }
+
+  #buscar-boton {
+    display: flex;
+    order: 1
+  }
+
+  .nav-activo {
+    color: var(--primario-300);
+  }
+
+  /* Finaliza estilos de la barra de navegación */
+
+  /* sección acerca de nosotros  */
+  .principal {
+    padding: var(--padding-30);
+  }
+
+  .encabezadoNosotros button {
+    display: inline-flex;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+  }
+
+  .encabezadoNosotros {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  .imagen-1 {
+    width: 80%;
+    bottom: -40px;
+    left: -60px;
+  }
+
+  .imagen-2 {
+    width: 80%;
+    top: -40px;
+    right: -60px;
+  }
+
+  .imagen-gris {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* Finaliza sección acerca de nosotros  */
+
+  /* seccion mision vision valores */
+
+  .tarjeta {
+    width: 30%;
+  }
+
+  /* Finaliza seccion mision vision valores */
+}

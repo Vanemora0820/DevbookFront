@@ -1,0 +1,1055 @@
+@import url(./styles.css);
+
+/* Header */
+.header {
+    background-color: var(--oscuro-400);
+    height: 60px;
+    max-width: 1200px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    border-bottom: 1px solid var(--blanco);
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 30px auto;
+}
+
+.header h1 {
+    font-family: "Josefin Sans";
+    font-size: 23px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--blanco);
+    cursor: pointer;
+}
+
+.header i {
+    place-content: center;
+    padding: var(--padding-10);
+}
+
+/* Finaliza Header */
+/* Sección de foto de portada y perfil  */
+.cover-photo-profile {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding: 0 var(--padding-10);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cover-photo-banner {
+    position: relative;
+    width: 100%;
+    height: 170px;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-image: url(../public/banner.png);
+}
+
+.btn-coverbanner {
+    position: relative;
+    right: -90%;
+    top: -55%;
+    background-color: var(--oscuro-0);
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    display: grid;
+    place-content: center;
+
+}
+
+.bxs-camera {
+    color: var(--negro);
+    font-size: 20px;
+}
+
+.profile-mobile {
+    position: absolute;
+    display: flex;
+    top: 85%;
+    left: 50%;
+    translate: -50% -50%;
+    align-items: center;
+    justify-content: center;
+    width: 134px;
+    height: 134px;
+    border-radius: 100%;
+    border: solid var(--oscuro-400) 5px;
+}
+
+.photo-profile {
+    width: 126px;
+    height: 126px;
+    border-radius: 100%;
+}
+
+.btn-coverphoto {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    translate: -50% -50%;
+    background-color: var(--oscuro-0);
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.Username {
+    position: relative;
+    top: 70px;
+}
+
+.Username h4 {
+    font-family: "Poppins";
+    font-size: 21px;
+    text-align: center;
+}
+
+.btn-notifications-desktop {
+    display: none;
+}
+
+/* Finaliza sección de foto de portada y perfil */
+/* descripción del perfil  */
+.container-description-btn-edit-and-conf {
+    margin-top: 40px;
+    padding: 0 var(--padding-10);
+}
+
+.profile-description p {
+    font-family: "Poppins";
+
+}
+
+.container-btn-edit-profile-config {
+    margin-top: 20px;
+}
+
+#btn-edit-profile {
+    border-radius: 4px;
+    width: 192px;
+    height: 30px;
+    justify-content: center;
+    font-size: 18px;
+    border: none;
+    color: var(--secundario-0);
+    background: var(--primario-100);
+    padding: 0 10px;
+    gap: 5px;
+    cursor: pointer
+}
+
+.btn-close-menu-profile {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.bx-chevrons-left {
+    font-size: 40px;
+}
+
+
+
+.details {
+    display: none;
+}
+
+.configuration {
+    width: 230px;
+    height: 180px;
+    background-color: var(--oscuro-300);
+    border-radius: 8px;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-10);
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 2px 2px 5px black;
+}
+
+.hidden-setting {
+    transform: scaleX(0) translate(200%, -200%);
+}
+
+.btn-configuration {
+    display: flex;
+    gap: var(--padding-10);
+    font-size: 14px;
+    padding: var(--padding-10);
+    align-self: flex-start;
+    padding-left: var(--padding-20);
+}
+
+.configuration>p {
+    border-bottom: solid 1px var(--blanco);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.profile-desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: var(--padding-20);
+    padding-top: 80px;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--oscuro-400);
+    right: -100%;
+    top: 0;
+    position: fixed;
+    height: 100vh;
+    z-index: 300;
+}
+
+.mostrar-menu {
+    right: 0;
+}
+
+.profile-desktop h4 {
+    display: none;
+}
+
+.profile-desktop span {
+    font-size: 18px;
+}
+
+.bx-edit {
+    font-size: 15px;
+}
+
+.bx-map {
+    font-size: 25px;
+}
+
+.bx-user-circle {
+    font-size: 25px;
+}
+
+.bx-cake {
+    font-size: 25px;
+}
+
+.bx-cool {
+    font-size: 25px;
+}
+
+.bx-coin-stack {
+    font-size: 25px;
+}
+
+.languege-program {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-configuration {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#btn-config {
+    border-radius: 4px;
+    width: 93px;
+    height: 30px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 18px;
+    border: none;
+    color: var(--secundario-0);
+    background: var(--primario-400);
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.line-division-btn {
+    width: 100%;
+    height: 1px;
+    background-color: var(--blanco);
+    margin-top: 20px;
+}
+
+/* Finaliza descripción del perfil  */
+/* Publicaciones */
+.container-post {
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+.individualPost {
+    background-color: var(--oscuro-300);
+    padding: var(--padding-10);
+}
+
+.user {
+    padding: var(--padding-10);
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.photo-profile-post {
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+}
+
+.name-timestamp {
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(25, 0, 255); */
+}
+
+.userNamePost {
+    font-family: "Poppins";
+    font-size: 18px;
+}
+
+.timestamp {
+    font-family: "Poppins";
+    font-size: 10px;
+}
+
+.content {
+    /* background-color: blueviolet; */
+    width: 100%;
+}
+
+.tex-post {
+    font-family: Poppins;
+    font-size: 14px;
+    margin-bottom: var(--padding-10);
+    text-align: left;
+}
+
+.media {
+    /* background-color: rgb(56, 70, 65); */
+    width: 100%;
+}
+
+.media img {
+    width: 100%;
+}
+
+.container-link-post-img {
+    /* background-color: brown; */
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-link-post-img img {
+    /* background-color: rgb(106, 42, 165); */
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+
+}
+
+.container-link-description {
+    /* background-color: rgb(43, 220, 226); */
+    margin-top: 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.container-link-description h4 {
+    font-size: 23px;
+    font-family: "Josefin Sans";
+    font-weight: 600;
+}
+
+.description-link {
+    font-size: 16px;
+    font-family: "Poppins";
+    text-align: left;
+}
+
+.url-link {
+    color: var(--gris);
+    font-size: 14px;
+}
+
+.likes-shares {
+    display: flex;
+}
+
+.container-icon {
+    display: flex;
+    align-items: baseline;
+    margin: 5px;
+}
+
+.bxs-like {
+    color: var(--primario-0);
+}
+
+.bxs-share-alt {
+    color: var(--primario-0);
+}
+
+.footer-post {
+    /* background-color: rgb(138, 133, 143); */
+    display: flex;
+    border-top: 1px solid var(--blanco);
+    justify-content: space-evenly;
+    height: 50px;
+}
+
+.btn-footer-post {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.btn-footer-post span {
+    font-size: 14px;
+}
+
+/* Finaliza publicaciones */
+
+/* Footer con notificaciones, amigos y crear nueva publicación  */
+.footer {
+    /* background-color: blueviolet; */
+    max-width: 1200px;
+    width: 100%;
+    bottom: 0;
+    height: 40px;
+    position: fixed;
+    z-index: 100;
+}
+
+.container-footer {
+    width: 100%;
+    background-color: var(--oscuro-400);
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--blanco);
+
+}
+
+.footer-btn {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    /* background-color: rgb(42, 65, 51); */
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+    gap: 5px;
+}
+
+.footer-btn span {
+    font-size: 10px;
+}
+
+
+
+/* Finaliza footer con notificaciones, amigos y crear nueva publicación  */
+@media (min-width: 744px) {
+
+    /* Header */
+    .header {
+        height: 80px;
+    }
+
+    .header h4 {
+        font-size: 40px;
+    }
+
+    /* Finaliza Header */
+    /* Sección de foto de portada y perfil  */
+    .cover-photo-profile {
+        /* background-color: red; */
+        margin-top: 100px;
+        padding: 0 65px;
+
+    }
+
+    .profile-description p {
+        font-size: 27px;
+
+    }
+
+    .cover-photo-banner {
+        height: 340px;
+        /* background-color: blue; */
+
+    }
+
+    .btn-coverbanner {
+        width: 46px;
+        height: 46px;
+    }
+
+    .bxs-camera {
+        font-size: 40px;
+    }
+
+    .profile-mobile {
+        width: 210px;
+        height: 210px;
+
+    }
+
+    .photo-profile {
+        width: 200px;
+        height: 200px;
+    }
+
+    .btn-coverphoto {
+        width: 46px;
+        height: 46px;
+    }
+
+    .Username {
+        top: 100px;
+        /* background-color: aqua; */
+    }
+
+    .Username h4 {
+        font-size: 30px;
+    }
+
+    /* Finaliza sección de foto de portada y perfil */
+
+    /* descripción del perfil  */
+    .container-two-column {
+        display: flex;
+        margin-top: 90px;
+    }
+
+    .container-profile-configuration {
+        display: flex;
+        backdrop-filter: blur(20px);
+        width: 100%;
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 300;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .mostrar-menu {
+        right: 0;
+    }
+
+    .container-description-btn-edit-and-conf {
+        /* background-color: chocolate; */
+        margin-top: 90px;
+        padding: 0 65px;
+    }
+
+
+
+    .container-btn-edit-profile-config {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #btn-edit-profile {
+        width: 420px;
+        height: 40px;
+        font-size: 24px;
+    }
+
+
+    .profile-desktop {
+        width: 50%;
+        height: max-content;
+        position: relative;
+        padding-top: 60px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .profile-desktop h4 {
+        display: none;
+    }
+
+    .profile-desktop span {
+        font-size: 18px;
+    }
+
+    .bx-edit {
+        font-size: 15px;
+    }
+
+    .bx-map {
+        font-size: 25px;
+    }
+
+    .bx-user-circle {
+        font-size: 25px;
+    }
+
+    .bx-cake {
+        font-size: 25px;
+    }
+
+    .bx-cool {
+        font-size: 25px;
+    }
+
+    .bx-coin-stack {
+        font-size: 25px;
+    }
+
+    .languege-program {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-configuration {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #btn-config {
+        width: 120px;
+        height: 40px;
+        font-size: 24px;
+    }
+
+    /* Finaliza descripción del perfil  */
+
+    /* Publicaciones */
+    .container-post {
+        width: 80%;
+        position: relative;
+        left: 10%;
+        margin-bottom: 100px;
+        gap: 20px;
+    }
+
+    .user {
+        gap: 10px;
+    }
+
+    .photo-profile-post {
+        width: 100px;
+        height: 100px;
+    }
+
+    .userNamePost {
+        font-size: 22px;
+    }
+
+    .timestamp {
+        font-size: 14px;
+    }
+
+    .tex-post {
+        font-size: 20px;
+        padding: var(--padding-20);
+    }
+
+    .container-link-post-img {
+        /* background-color: brown; */
+        width: 100%;
+        height: 300px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-link-post-img img {
+        /* background-color: rgb(106, 42, 165); */
+        width: 95%;
+        height: 300px;
+        border-radius: 8px;
+
+    }
+
+    .container-link-description {
+        /* background-color: rgb(43, 220, 226); */
+        margin-top: 10px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        padding-left: var(--padding-10);
+    }
+
+    .container-link-description h4 {
+        font-size: 23px;
+        font-family: "Josefin Sans";
+        font-weight: 600;
+    }
+
+    .description-link {
+        font-size: 16px;
+        font-family: "Poppins";
+    }
+
+    .url-link {
+        color: var(--gris);
+        font-size: 14px;
+    }
+
+    .container-icon {
+        margin: 5px 15px;
+        font-size: 28px;
+        gap: 5px;
+    }
+
+    .bxs-like {
+        font-size: 30px;
+    }
+
+    .bxs-share-alt {
+        font-size: 30px;
+    }
+
+    .footer-post {
+        height: 70px;
+    }
+
+    .btn-footer-post {
+        gap: 10px;
+    }
+
+    .icon-footer-post {
+        font-size: 30px;
+    }
+
+    .btn-footer-post span {
+        font-size: 24px;
+    }
+
+    /* Finaliza publicaciones */
+
+    /* Footer con notificaciones, amigos y crear nueva publicación  */
+    .footer {
+        height: 80px;
+    }
+
+    .container-footer {
+        height: 100%;
+    }
+
+    .footer-btn {
+        width: 30%;
+        height: 100%;
+    }
+
+    .footer-btn span {
+        font-size: 24px;
+    }
+
+    .icon-footer {
+        font-size: 35px;
+    }
+
+    /* Finaliza footer con notificaciones, amigos y crear nueva publicación  */
+}
+
+@media(min-width: 1200px) {
+
+    /* Header */
+    .header {
+        height: 90px;
+    }
+
+    .header h4 {
+        font-size: 45px;
+    }
+
+    /* Finaliza Header */
+    /* Sección de foto de portada y perfil  */
+    .cover-photo-profile {
+        /* background-color: red; */
+        margin-top: 140px;
+        padding: 0 65px;
+    }
+
+    .Username {
+        top: 120px;
+    }
+
+    .btn-notifications-desktop {
+        display: flex;
+        position: relative;
+        top: 75px;
+        left: 41%;
+        border-radius: 4px;
+        background-color: var(--oscuro-100);
+        width: 200px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins";
+        font-size: 20px;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .icon-notifications-desktop {
+        font-size: 30px;
+    }
+
+    .container-description-btn-edit-and-conf,
+    .btn-close-menu-profile {
+        display: none;
+    }
+
+    /* Finaliza sección de foto de portada y perfil */
+    /* contenedor con detalles, perfil, configuración y publicaciones */
+    .container-two-column {
+        display: flex;
+        margin-top: 90px;
+    }
+
+    .container-details-profile-configuration {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 3%;
+        width: 40%;
+        gap: 20px;
+    }
+
+    .details {
+        display: block;
+        background-color: var(--oscuro-300);
+        padding: var(--padding-30);
+    }
+
+    .details h4 {
+        font-family: "Josefin Sans";
+        font-size: 25px;
+    }
+
+    .details p {
+        font-family: "Poppins";
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .main-contac {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 10px 0;
+        border-top: 1px solid var(--blanco);
+        border-bottom: 1px solid var(--blanco);
+        padding: var(--padding-30) 0;
+    }
+
+    .item-contac {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        gap: 10px;
+    }
+
+    .item-contac span {
+        font-size: 24px;
+    }
+
+    .bx-envelope {
+        font-size: 40px;
+    }
+
+    .bx-phone {
+        font-size: 40px;
+    }
+
+    .footer-details {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 25px;
+    }
+
+    .btn-footer-details {
+        background-color: var(--oscuro-100);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        width: 30%;
+        height: 40px;
+        font-family: "Poppins";
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .container-profile-configuration {
+        background-color: var(--oscuro-300);
+        padding: var(--padding-30);
+        display: flex;
+        flex-direction: column;
+        /* background-color: blue; */
+        backdrop-filter: none;
+        position: static;
+        justify-content: center;
+        align-items: normal;
+        z-index: 0;
+        height: auto;
+    }
+
+    .mostrar-menu {
+        position: static;
+        top: 0;
+        right: 0;
+        background-color: none;
+        backdrop-filter: none;
+        height: 0;
+    }
+
+    .profile-desktop {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: max-content;
+        left: 0;
+        top: 0;
+        margin-left: 0;
+        gap: 20px;
+        padding: 0;
+        background-color: transparent;
+        backdrop-filter: none;
+        padding-bottom: var(--padding-30);
+        box-shadow: none;
+        transition: none;
+    }
+
+    .profile-desktop h4 {
+        display: flex;
+        font-family: "Josefin Sans";
+        font-size: 25px;
+    }
+
+    .profile-desktop span {
+        font-size: 24px;
+    }
+
+    .bx-edit {
+        font-size: 25px;
+    }
+
+    .bx-map {
+        font-size: 40px;
+    }
+
+    .bx-user-circle {
+        font-size: 40px;
+    }
+
+    .bx-cake {
+        font-size: 40px;
+    }
+
+    .bx-cool {
+        font-size: 40px;
+    }
+
+    .bx-coin-stack {
+        font-size: 40px;
+    }
+
+    .languege-program {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .configuration {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 10px 0;
+        border-top: 1px solid var(--blanco);
+        padding-top: var(--padding-30);
+    }
+
+    .configuration h4 {
+        font-family: "Josefin Sans";
+        font-size: 25px;
+    }
+
+    .item-configuration {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        gap: 10px;
+    }
+
+    .item-configuration span {
+        font-size: 24px;
+    }
+
+    .language {
+        background-color: var(--oscuro-300);
+        border: none;
+        color: var(--blanco);
+    }
+
+    .bx-moon {
+        font-size: 40px;
+    }
+
+    .bx-rupee {
+        font-size: 40px;
+    }
+
+    .bx-log-out-circle {
+        font-size: 40px;
+    }
+
+    .container-post {
+        width: 50%;
+        position: relative;
+        left: 5%;
+        margin-bottom: 40px;
+    }
+
+    /* Finaliza contenedor con detalles, perfil, configuración y publicaciones */
+    /* Footer con notificaciones, amigos y crear nueva publicación  */
+    .footer {
+        display: none;
+    }
+
+    /* Finaliza footer con notificaciones, amigos y crear nueva publicación  */
+}

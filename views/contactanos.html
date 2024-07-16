@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/LogoDocOfi.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/contactanos.css">
+    <title>Contáctanos</title>
+</head>
+
+<body>
+
+    <div class="mainContainer">
+
+        <!-- Header - Menú -->
+        <header class="header">
+            <div>
+                <nav class="nav">
+                    <a href="#" class="logo" id="logo-menu"><img src="../img/LogoDocOfi.png" class="logo"></a>
+                    <div class="containerSearchContact" id="containerSearchContact">
+                        <input type="text" class="inputBuscador" id="inputSearch" name="inputSearch">
+                        <label for="inputSearch" id="label"><i class='bx bx-search'></i></label>
+                        <button type="button" id="btnSearchContact">Buscar<i class='bx bx-chevron-down'></i></button>
+                    </div>
+                    <div class="burguerMenu" id="burguer"><i class='bx bx-menu'></i></div>
+                    <ul class="nav-menu" id="menuContainerContact">
+                        <div class="btnCloseMenu" id="closeMenu"><i class='bx bx-chevrons-left'></i></div>
+                        <li><a href="/views/nosotros.html" class="nav-menu-item">Acerca de nosotros</a></li>
+                        <li><a href="#contactanos" class="nav-menu-item">Contáctanos</a></li>
+                        <li><a href="/views/inicio.html" target="_blank" class="nav-menu-item">Devbook</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Finaliza codigo Header -->
+
+        <!-- Formulario de Contacto -->
+        <div class="formContainerContact">
+            <h1 class="titleFormContact">Contáctanos</h1>
+            <div class="contentForm">
+                <div class="addressForm">
+                    <div class="info">
+                        <section class="icons">
+                            <a href="#"><i class='bx bxl-youtube'></i></a>
+                            <a href="#"><i class='bx bxl-instagram'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                        </section>
+                        <h3 class="infoData">
+                            <p class="p p1">
+                                Formattech
+                            </p>
+                            <p class="p p2">
+                                CALLE 80 # 102 - 64
+                                <br>
+                            </p>
+                            <p class="p p3">
+                                <a>+57 300 728 35 26 </a>
+                            </p>
+                            <p class="p p4">
+                                servicioalcliente@formattech.com
+                            </p>
+                        </h3>
+                    </div>
+                    <img src="../img/celu.png">
+                </div>
+                <div class="form">
+                    <h4>Déjanos un Comentario</h4>
+                    <form action="https://formspree.io/f/xbjnebvn" method="POST">
+                        <div class="inputs">
+                            <input type="text" id="name" name="name" required min="3"
+                                data-error-message="No es un nombre válido. Formato NOMBRES y APELLIDOS">
+                            <label for="name">Nombre</label>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        <div class="inputs">
+                            <input type="email" id="email" name="email" required
+                                data-error-message="No es un correo electrónico válido. Formato email@example.com">
+                            <label for="email">Correo Electrónico</label>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        <div class="inputs">
+                            <textarea id="message" name="message" rows="4" required
+                                data-error-message="El mensaje no puede exceder las 100 palabras."></textarea>
+                            <label for="message">Mensaje</label>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        <div class="inputs">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footerContainer">
+                <div class="columnContactLogo">
+                    <div class="columnLogo">
+                        <a href="#">
+                            <img src="../img/LogoDocOfi.png" alt="Logo de la empresa">
+                        </a>
+                    </div>
+                    <div class="columnContact">
+
+                        <ul>
+                            <li>
+
+                                <h3>CONTACTO</h3>
+
+                            </li>
+                            <li>
+
+                                <i class="fas fa-phone-alt"></i> +57 300 7 28 35 26
+
+                            </li>
+                            <li>
+
+                                <i class="fas fa-map-marker-alt"></i> Calle 80 N° 102 - 64
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="columnInstitutional">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <h3>INSTITUCIONAL</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#startPage">
+                                <i class="fas fa-comment-dots"></i> Nosotros
+                        </li>
+                        <li>
+                            <a href="#tarjeta-mision">
+                                <i class="fas fa-question-circle"></i> Misión y Visión
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tarjeta-valores">
+                                <i class="fas fa-question-circle"></i> Valores
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-user-shield"></i> Política de Privacidad
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-shield-alt"></i> Aviso de Privacidad
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-file-contract"></i> Términos y Condiciones
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="social">
+                <a href="https://www.linkedin.com/feed/" class="icono-linkedin" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/EdwarLe/DevBook" class="icono-github" target="_blank"><i
+                        class="fab fa-github"></i></a>
+                <a href="mailto:administracion@formattech.com.co" class="icono-correo"><i
+                        class="fas fa-envelope"></i></a>
+                <a href="https://www.facebook.com/" class="icono-facebook"><i class="fab fa-facebook"></i></a>
+            </div>
+            <div class="reservedRights">
+                <p>&copy; 2024 Formatech. Todos los derechos reservados.</p>
+            </div>
+    </div>
+    </footer>
+    <!-- Finaliza Footer -->
+
+    </div>
+    <script src="../js/formulario_de_contacto.js"></script>
+    <script src="../js/menu-hamburguesa.js"></script>
+</body>
+
+</html>

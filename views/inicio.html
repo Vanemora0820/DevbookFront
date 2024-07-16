@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/LogoDevBook.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/inicio.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <main class="contenedorPrincipalApp">
+        <header>
+            <div class="nav-menu">
+                <h1 class="title">DevBook</h1>
+                <section class="navegacion">
+                    <a href="./perfil.html"><i class='bx bx-user-circle'></i></a>
+                    <a href="./nosotros.html"><i class='bx bx-shopping-bag'></i></a>
+                    <i id="btn-config" class='bx bxs-cog'></i>
+
+                </section>
+            </div>
+            <!-- <hr> -->
+            <div class="busqueda">
+                <img src="../public/profile/user.jpg" id="userPicture">
+                <div class="searchInput">
+                    <input placeholder="Buscar">
+                    <!-- Elemento i posicionado absolutamente -->
+                    <i class='bx bx-search-alt'></i>
+
+
+                </div>
+                <section class="nueva-publicacion" id="new-post-desk">
+                    <i class='bx bxs-add-to-queue'></i>
+                    <h3>Nuevo post</h3>
+                </section>
+            </div>
+        </header>
+        <main class="contenedor-publicacion">
+            <div class="publicaciones" id="publicaciones">
+                <div id="media"> </div>
+            </div>
+            <div class="sidebar">
+                <div id="notificaciones" class="notificaciones">
+                    <h3>Notificaciones</h3>
+                </div>
+                <div class="lista-amigos">
+                    <h3>Amigos</h3>
+                </div>
+            </div>
+        </main>
+        <footer class="pie-pagina">
+            <section class="pie notificacion" id="notifications">
+                <i class='bx bxs-bell'></i>
+                <h3>Notificaciones</h3>
+            </section>
+            <section class="pie amigos" id="friends">
+                <i class='bx bxs-group'></i>
+                <h3>Amigos</h3>
+            </section>
+            <section class="pie publicacion" id="new-post">
+                <i class='bx bxs-add-to-queue'></i>
+                <h3>Nuevo post</h3>
+            </section>
+        </footer>
+        <div class="modal-configuration hidden-setting" id="modal-configuration">
+
+        </div>
+
+        <div class="modal-friends hidden-friends" id="modal-friends">
+            <div class="friendsList friendsModal">
+                <div class="friendsTitle">
+                    <i class='bx bxs-chevrons-left' id="close-friends"></i>
+                    <h3>Amigos</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-notifications hidden-notifications notificacionesSelect" id="modal-notifications">
+            <div class="notificationsList notificacionesModal">
+                <div class="notificattionTitle">
+                    <i class='bx bxs-chevrons-left' id="close-notifications"></i>
+                    <h3>Notificaciones</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="containerComment hiddenComment">
+
+            <div class="commentBox">
+                <div class="commentsTitle">
+                    <i class='bx bx-chevrons-left closeComment'></i>
+                    <h3>Commentarios</h3>
+
+                </div>
+
+                <div class="commentModal">
+                </div>
+
+            </div>
+
+        </div>
+
+        <form class="modal-new-post" id="modal-new-post">
+            <div class="container-modal">
+                <div class="back-post">
+                    <i class='bx bxs-chevrons-left' id="btn-back-post"></i>
+                    <p>Crear Publicación</p>
+                    <button class="btn-post" type="submit" id="btn-post">Publicar</button>
+                </div>
+                <div class="profile-post">
+                    <div class="img-new-post">
+                        <img src="../public/images/edwar-leon.png" alt="image profile" id="img-user-post">
+                    </div>
+                    <p id="name-user-post">Eddy León</p>
+                </div>
+                <textarea class="msg-post" name="msg-post" id="msg-post" placeholder="¿Qué estás pensando?"></textarea>
+                <div class="footer-post">
+                    <div class="media-box-post vid-box" id="btn-video-file">
+                        <input type="file" name="video-file" id="video-file" class="media-post">
+                        <label>Videos</label>
+                        <i class='bx bxs-video'></i>
+                    </div>
+                    <div class="media-box-post" id="btn-photo-file">
+                        <input type="file" name="video-file" id="photo-file" class="media-post">
+                        <p>Fotos</p>
+                        <i class='bx bxs-image'></i>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+
+    </main>
+    <script src="../js/consumo-publicaciones.js" type="module"></script>
+    <script src="../js/consumo-notificaciones.js" type="module"></script>
+    <script src="../js/modal-configuration.js"></script>
+    <script src="../js/modal-friends.js" type="module"></script>
+    <script src="../js/modal-notifications.js" type="module"></script>
+    <script src="../js/modal-comments.js" type="module"></script>
+    <script src="/js/new-post.js" type="module"></script>
+
+</body>
+
+
+</html>

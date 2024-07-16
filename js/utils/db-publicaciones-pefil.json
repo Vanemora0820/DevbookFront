@@ -1,0 +1,292 @@
+{
+    "posts": [
+        {
+            "id": "1",
+            "user": {
+                "id": "user_1",
+                "name": "Eddy León",
+                "profile_picture": "../public/images/edwar-leon.png"
+            },
+            "content": {
+                "text": "Explorando la intersección del diseño y la funcionalidad en el desarrollo frontend. ¿Qué técnicas o herramientas te inspiran últimamente? Compartamos ideas para mejorar juntos! 🎨💻 #DiseñoFrontend #DesarrolloWeb",
+                "media": [],
+                "link": null
+            },
+            "timestamp": "2024-05-30-11:54pm",
+            "likes": 10,
+            "comments": [],
+            "shares": 1
+        },
+        {
+            "id": "2",
+            "user": {
+                "id": "user_1",
+                "name": "Eddy León",
+                "profile_picture": "../public/images/edwar-leon.png"
+            },
+            "content": {
+                "text": "¡Hola, comunidad de desarroladores! Hoy quiero compartir con ustedes mi pasión por el diseño de desarrollo Front-end. Cada detalle importa: desde la elección de colores hasta la disposición de los elementos, todo influye en la experiencia de usuario.¿Qué técnicas o herramientas te inspiran últimamente?¡Compartamos ideas para seguir mejorando juntos! #DiseñoFrontend #DesarrolloWeb #UI #UX ¡Espero sus comentarios y experiencias! ¡Sigamos haciendo del frontend un lugar más bonito y funcional! 🌟",
+                "media": [
+                    {
+                        "type": "image",
+                        "url": "https://ovacen.com/wp-content/uploads/2022/12/diseno-experiencia-usuario.jpg"
+                    }
+                ],
+                "link": null
+            },
+            "timestamp": "2024-05-28-10:00am",
+            "likes": 25,
+            "comments": [
+                {
+                    "id": "comment_1",
+                    "user": {
+                        "id": "user_3",
+                        "name": "Alice Brown"
+                    },
+                    "text": "Todo lo que dices es muy cierto",
+                    "timestamp": "2024-05-29-11:00am",
+                    "likes": 2
+                }
+            ],
+            "shares": 3
+        },
+        {
+            "id": "3",
+            "user": {
+                "id": "user_1",
+                "name": "Eddy León",
+                "profile_picture": "../public/images/edwar-leon.png"
+            },
+            "content": {
+                "text": "¡Hola, comunidad de desarrolladores frontend! Estoy emocionado por compartir con ustedes algunas nuevas habilidades que estoy explorando para llevar mi desarrollo al siguiente nivel. Desde animaciones con CSS hasta el uso avanzado de frameworks como React.js, cada aprendizaje abre nuevas puertas para crear experiencias web más dinámicas y atractivas. #DesarrolloFrontend #CSSAnimations #ReactJS #AprendizajeContinuo",
+                "media": [
+                    {
+                        "type": "image",
+                        "url": "https://iscribo.com/wp-content/uploads/2021/01/Ilustraciones-iScribo-derechos-autor-10-1024x959.png"
+                    }
+                ],
+                "link": null
+            },
+            "timestamp": "2024-05-27-9:30am",
+            "likes": 50,
+            "comments": [
+                {
+                    "id": "comment_2",
+                    "user": {
+                        "id": "user_4",
+                        "name": "Bob Johnson"
+                    },
+                    "text": "yo estoy iniciando con React :)",
+                    "timestamp": "2024-05-27-10:00am",
+                    "likes": 5
+                }
+            ],
+            "shares": 4
+        },
+        {
+            "id": "4",
+            "user": {
+                "id": "user_1",
+                "name": "Eddy León",
+                "profile_picture": "../public/images/edwar-leon.png"
+            },
+            "content": {
+                "text": "¡Hola, comunidad de desarrolladores frontend! Hoy quiero compartir con ustedes un video que encontré increíblemente útil para mejorar mis habilidades en programación frontend. Se trata de ¨7 cosas que debes saber para ser programador frontend este 2023¨, donde vemos 7 puntos claves que cualquier progrmador Web debe saber para el Front. ¡No se lo pierdan! Aquí les dejo el enlace: https://www.youtube.com/watch?v=q0UgClC8md4 ¿Ya lo vieron? ¿Qué les pareció? ¡Compartan sus opiniones y aprendizajes en los comentarios! #DesarrolloFrontend #VideoRecomendado #AprendizajeContinuo ¡Espero que disfruten del video tanto como yo y que les sea útil en su camino como desarrolladores frontend! 🚀✨",
+                "media": [
+                    {
+                        "type": "video",
+                        "url": "https://youtu.be/q0UgClC8md4?si=zpwe7wFbWXgxqEXR"
+                    }
+                ],
+                "link": null
+            },
+            "timestamp": "2024-05-26-9:30am",
+            "likes": 30,
+            "comments": [
+                {
+                    "id": "comment_3",
+                    "user": {
+                        "id": "user_1",
+                        "name": "John Doe"
+                    },
+                    "text": "Wow, es un video genial!",
+                    "timestamp": "2024-05-29-2:00pm",
+                    "likes": 3
+                }
+            ],
+            "shares": 5
+        },
+        {
+            "id": "5",
+            "user": {
+                "id": "user_1",
+                "name": "Eddy León",
+                "profile_picture": "../public/images/edwar-leon.png"
+            },
+            "content": {
+                "text": "Para los que estan iniciando en este mundo, les recomiendo empezar por lo más basico que es HTML",
+                "media": [],
+                "link": {
+                    "url": "https://lenguajehtml.com/html/",
+                    "title": "Lenguaje HTML5 - HTML en español",
+                    "description": "Lenguaje de marcado HTML5 utilizado en el desarrollo web para crear contenido y la estructura de una",
+                    "image": "../public/link-post1.png"
+                    
+                }
+            },
+            "timestamp": "2024-05-25-1:00pm",
+            "likes": 20,
+            "comments": [
+                {
+                    "id": "comment_4",
+                    "user": {
+                        "id": "user_2",
+                        "name": "Jane Smith"
+                    },
+                    "text": "Gracias, estoy iniciando en el mundo de la programación y este link me cae de perlas.",
+                    "timestamp": "2024-05-26-1:40am",
+                    "likes": 4
+                }
+            ],
+            "shares": 6
+        },
+        {
+            "id": "6",
+            "user": {
+                "id": "user_1",
+                "name": "Eddy León",
+                "profile_picture": "../public/images/edwar-leon.png"
+            },
+            "content": {
+                "text": "Reflexión sobre el Desarrollo Frontend: En el desarrollo frontend, cada línea de código es una oportunidad para crear experiencias significativas y accesibles para los usuarios. La combinación perfecta de diseño y funcionalidad es clave para impactar positivamente en la experiencia del usuario. ¿Cuáles son tus mayores desafíos o logros en este campo? ¡Comparte tus historias y aprendizajes conmigo! 💻🎨 #DesarrolloFrontend",
+                "media": [],
+                "link": null
+            },
+            "timestamp": "2024-05-24-8:30am",
+            "likes": 15,
+            "comments": [],
+            "shares": 2
+        },
+        {
+            "id": "7",
+            "user": {
+                "id": "user_1",
+                "name": "Eddy León",
+                "profile_picture": "../public/images/edwar-leon.png"
+            },
+            "content": {
+                "text": "Les comparto este curso para las personas que quieran iniciar en Java.",
+                "media": [],
+                "link": {
+                    "url": "https://codigofacilito.com/cursos/java-profesional",
+                    "title": "Curso Profesional de JAVA",
+                    "description": "Java es el lenguaje más popular del mundo. Con este lenguaje puedes escribir programas y aplicaciones para ",
+                    "image": "../public/link-post2.png"
+                    
+                }
+            },
+            "timestamp": "2024-05-23-10:40am",
+            "likes": 18,
+            "comments": [],
+            "shares": 3
+        },
+        {
+            "id": "8",
+            "user": {
+                "id": "user_1",
+                "name": "Eddy León",
+                "profile_picture": "../public/images/edwar-leon.png"
+            },
+            "content": {
+                "text": "Estoy feliz de acabar el proyecto en el que estaba trabajando, esperen próximas actualizaciones del proyecto.",
+                "media": [],
+                "link": null
+            },
+            "timestamp": "2024-05-23-2:20pm",
+            "likes": 22,
+            "comments": [
+                {
+                    "id": "comment_5",
+                    "user": {
+                        "id": "user_5",
+                        "name": "Charlie Green"
+                    },
+                    "text": "Felicidades",
+                    "timestamp": "2024-05-23-4:00pm",
+                    "likes": 3
+                }
+            ],
+            "shares": 2
+        },
+        {
+            "id": "9",
+            "user": {
+                "id": "user_1",
+                "name": "Eddy León",
+                "profile_picture": "../public/images/edwar-leon.png"
+            },
+            "content": {
+                "text": "Explorando el Futuro del Frontend: ¿Qué nos depara el futuro del desarrollo frontend? Desde la evolución de frameworks hasta la integración de IA en interfaces de usuario, el campo está en constante cambio. ¿Cuáles son las tendencias que más te emocionan o preocupan? ¡Comenta y vamos a discutirlo juntos! 🌐💡 #Frontend #Tecnología",
+                "media": [],
+                "link": null
+            },
+            "timestamp": "2024-05-22-8:50pm",
+            "likes": 12,
+            "comments": [],
+            "shares": 1
+        },
+        {
+            "id": "10",
+            "user": {
+                "id": "user_1",
+                "name": "Eddy León",
+                "profile_picture": "../public/images/edwar-leon.png"
+            },
+            "content": {
+                "text": "Les comparto un resumen en forma de imagen sobre que es el Back-end y el Fron-end.",
+                "media": [
+                    {
+                        "type": "image",
+                        "url": "https://images.ctfassets.net/crb83veve8xb/3uwirX5ladIGu5yTuhEoBC/64615818e1e74c794f72a85f1ca9521f/Gluo-OCT-11.jpg"
+                    }
+                ],
+                "link": null
+            },
+            "timestamp": "2024-05-20-1:35pm",
+            "likes": 40,
+            "comments": [
+                {
+                    "id": "comment_6",
+                    "user": {
+                        "id": "user_6",
+                        "name": "David Lee"
+                    },
+                    "text": "Gracias, esa imagen me sirvio para aclarar dudas.",
+                    "timestamp": "2024-05-20-2:10pm",
+                    "likes": 6
+                },
+                {
+                    "id": "comment_7",
+                    "user": {
+                        "id": "user_5",
+                        "name": "Charlie Green"
+                    },
+                    "text": "Que resumen, tan bueno",
+                    "timestamp": "2024-05-21-7:40am",
+                    "likes": 3
+                },
+                {
+                    "id": "comment_8",
+                    "user": {
+                        "id": "user_5",
+                        "name": "Charli"
+                    },
+                    "text": "Sabes dónde puedo leer más sobre el tema, por favor.",
+                    "timestamp": "2024-05-22-3:26pm",
+                    "likes": 3
+                }
+            ],
+            "shares": 7
+        }
+    ]
+}

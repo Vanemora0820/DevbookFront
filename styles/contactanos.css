@@ -1,0 +1,665 @@
+@import url(./styles.css);
+
+/* Estilos de la barra de navegación */
+
+.header {
+    height: 60px;
+    width: 100%;
+    max-width: 1200px;
+    background-color: var(--oscuro-400);
+    position: fixed;
+    z-index: 100;
+}
+
+.nav {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    padding: var(--padding-10);
+    align-items: center;
+    gap: var(--padding-10);
+}
+
+.logo {
+    transition: all 0.1s ease-in-out;
+    width: 50px;
+    border-radius: 10px;
+    order: 1;
+    display: grid;
+    place-content: center;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.nav-menu {
+    display: grid;
+    place-content: center;
+    gap: var(--padding-20);
+    position: fixed;
+    background-color: var(--primario-100);
+    height: 100%;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    list-style: none;
+}
+
+.nav-menu-item {
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: bold;
+    transition: all 0.02 ease-in-out;
+    color: var(--oscuro-400);
+    transition: background-color 0.2s ease-in-out;
+    border-radius: var(--padding-10);
+    padding: var(--padding-10);
+
+}
+
+.nav-menu-item:hover {
+    background-color: var(--secundario-200);
+    border-radius: var(--padding-10);
+    padding: var(--padding-10);
+    color: var(--oscuro-400);
+}
+
+.burguerMenu {
+    color: var(--negro);
+    order: 1;
+    border: solid 1px var(--secundario-200);
+    border-radius: 100%;
+    background-color: var(--secundario-100);
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+.containerSearchContact {
+    position: relative;
+    display: flex;
+    width: 40px;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+
+.containerSearchContact label {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    transition: all 0.2s ease-in-out;
+    display: grid;
+    place-content: center;
+
+}
+
+.inputBuscador {
+    background-color: transparent;
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+    padding: 0 5px;
+    border: 1px solid transparent;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.show-input {
+    border-color: var(--gris);
+    background-color: var(--blanco);
+}
+
+.bx-search {
+    color: var(--primario-200);
+    font-size: 24px;
+}
+
+.bx-chevrons-left {
+    font-size: 40px;
+}
+
+#btnSearchContact {
+    display: none;
+    border-radius: 8px;
+    width: 120px;
+    height: 36px;
+    justify-content: center;
+    font-size: 20px;
+    border: none;
+    color: var(--secundario-300);
+    background: #F2FFFB;
+    padding: 0 10px;
+    gap: 5px;
+}
+
+.bx-chevron-down {
+    font-size: 30px;
+}
+
+.btnCloseMenu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.mostrar-menu {
+    right: 0;
+    background-color: #8db4f754;
+    backdrop-filter: blur(10px);
+}
+
+.nav-activo {
+    color: var(--primario-300);
+}
+
+/* Finaliza estilos de la barra de navegación */
+
+
+/* Sección Formulario de contacto */
+
+.formContainerContact {
+    width: 100%;
+    padding: var(--padding-10);
+    margin-top: 90px;
+}
+
+.form {
+    position: relative;
+}
+
+.form h4 {
+    font-family: 'Josefin Sans';
+    font-size: 23px;
+    text-align: center;
+    margin: var(--padding-30) 0;
+
+}
+
+.info {
+    margin-top: var(--padding-30);
+}
+
+.addressForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.titleFormContact {
+    color: var(--primario-200);
+    text-align: center;
+    font-family: "Ubuntu";
+    font-size: 51px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.addressForm .infoData {
+    color: var(--oscuro-400);
+    text-align: justify;
+    font-family: "Ubuntu";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: var(--padding-30);
+}
+
+.infoData a {
+    font-family: inherit;
+    text-decoration: underline;
+}
+
+.p3,
+.p4 {
+    margin-top: var(--padding-20);
+}
+
+.addressForm img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.form input,
+textarea {
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    border: 1.2px solid var(--primario-100);
+    margin: 10px 0px;
+    padding-left: var(--padding-10);
+
+}
+
+.form textarea {
+    min-height: 100px;
+    padding-top: var(--padding-10);
+}
+
+.form button {
+    color: white;
+    display: flex;
+    width: 100%;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--padding-10);
+    border-radius: 4px;
+    border: var(--primario-300);
+    background: var(--primario-300);
+    margin-top: 10px;
+    border: 2px solid transparent;
+    transition: all ease-in-out 0.2s;
+}
+
+.form button:hover {
+    border: 2px solid var(--primario-300);
+    color: var(--primario-400);
+    background-color: transparent;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--padding-10);
+    font-size: 16px;
+}
+
+.icons a {
+    text-decoration: none;
+    color: var(--primario-300);
+}
+
+input.invalid,
+textarea.invalid {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+.form .inputs {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    border: 1.2px solid var(--primario-100);
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border-color: var(--primario-300);
+}
+
+
+
+.form label {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-size: 16px;
+    color: var(--primario-100);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.form input:focus+label,
+.form input.filled+label,
+.form textarea:focus+label,
+.form textarea.filled+label {
+    top: -20px;
+    left: 10px;
+    font-size: 12px;
+    color: var(--primario-100);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0 3px;
+}
+
+/* Finalza Sección Formulario de Contacto */
+
+/* seccion pie de pagina  */
+
+.footer {
+    background-color: var(--oscuro-400);
+    color: white;
+    padding: 2em 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 1em;
+}
+
+.columnContactLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.columnContact,
+.columnInstitutional {
+    min-width: 200px;
+    padding: var(--padding-10);
+}
+
+.columnContact ul,
+.columnInstitutional ul {
+    list-style: none;
+}
+
+.columnContact ul li,
+.columnInstitutional ul li {
+    margin: 0.5em 0;
+    display: flex;
+    align-items: center;
+}
+
+.columnContact ul li a,
+.columnInstitutional ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.columnContact ul li a:hover,
+.columnInstitutional ul li a:hover {
+    text-decoration: underline;
+}
+
+.columnContact ul li a i,
+.columnInstitutional ul li a i {
+    margin-right: 0.5em;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5em;
+    font-size: 1.5em;
+}
+
+.social a:hover {
+    color: var(--primario-200);
+}
+
+.reservedRights {
+    width: 100%;
+    margin-top: var(--padding-10);
+}
+
+.reservedRights p {
+    font-size: 14px;
+}
+
+.columnLogo {
+    width: 200px;
+    height: 150px;
+
+}
+
+.columnLogo img {
+    width: 100%;
+}
+
+/* Finaliza seccion pie de pagina  */
+
+@media (min-width: 744px) {
+
+    /* Estilos de la barra de navegación */
+    .header {
+        height: 80px;
+    }
+
+    .mostrar-menu {
+        right: 0;
+        width: 40%;
+    }
+
+    .burguerMenu {
+        width: 44px;
+        height: 44px;
+    }
+
+    .bx-menu {
+        font-size: 30px;
+    }
+
+    .logo {
+        order: -1;
+        width: 70px;
+        height: 58px;
+        border-radius: 10px;
+    }
+
+    .containerSearchContact {
+        width: 367px;
+        justify-content: center;
+        border: 1px solid var(--gris);
+        background-color: var(--blanco);
+    }
+
+    .bx-search {
+        color: var(--gris);
+    }
+
+    .containerSearchContact label {
+        left: 6%;
+    }
+
+    #btnSearchContact {
+        display: flex;
+    }
+
+    .inputBuscador:focus+label {
+        display: none;
+    }
+
+    .nav-activo {
+        color: var(--primario-300);
+    }
+
+    /* Finaliza estilos de la barra de navegación */
+
+
+    /* Sección Formulario de Contacto */
+
+    .formContainerContact {
+        width: 70%;
+        margin: 0 auto;
+        box-shadow: 0 0 10px 10px rgb(226, 226, 226);
+        margin-top: 120px;
+        padding: var(--padding-30);
+    }
+
+    .icons {
+        font-size: 24px;
+        margin-top: var(--padding-20);
+    }
+
+    .infoData .p {
+        text-align: left;
+    }
+
+    .titleFormContact {
+        text-decoration: underline;
+        text-underline-offset: 3vh;
+        text-transform: uppercase;
+        font-family: 'Josefin Sans';
+        font-size: 27px;
+        font-weight: 650;
+        letter-spacing: 0.24px;
+        text-align: center;
+        display: block;
+    }
+
+    .info {
+        width: 75%;
+        display: block;
+        margin: var(--padding-30) auto;
+    }
+
+    img {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .form h4 {
+        /* text-align: center; */
+        margin: 3vh auto;
+    }
+
+    /* Finaliza sección Formulario de Contacto */
+
+    /* Sección footer  */
+
+    .footer {
+        padding: var(--padding-10);
+    }
+
+    .footerContainer {
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    /* Finaliza Sección footer  */
+}
+
+@media (min-width: 1200px) {
+
+    /* Estilos de la barra de navegación */
+
+    .nav {
+        justify-content: space-around;
+    }
+
+    .nav-menu {
+        background: transparent;
+        position: static;
+        display: flex;
+        width: auto;
+        justify-content: center;
+        gap: var(--padding-30);
+        align-items: center;
+    }
+
+    .nav-menu-item {
+        font-size: 20px;
+        color: var(--blanco);
+    }
+
+    .containerSearchContact label {
+        left: 7%;
+    }
+
+    .burguerMenu,
+    .btnCloseMenu {
+        display: none;
+    }
+
+    .logo {
+        order: -1;
+    }
+
+    .containerSearchContact {
+        order: 1;
+
+    }
+
+    #btnSearchContact {
+        display: flex;
+        order: 1
+    }
+
+    .nav-activo {
+        color: var(--primario-300);
+    }
+
+    /* Finaliza estilos de la barra de navegación */
+
+    /* Sección Formulario de Contacto */
+
+    .addressForm,
+    .form {
+        flex: 1;
+        min-width: 300px;
+        padding: 20px;
+        margin-top: 2em;
+    }
+
+    .addressForm {
+        order: 1
+    }
+
+    .addressForm .infoData {
+        margin-top: var(--padding-10);
+    }
+
+    .titleFormContact {
+        margin-top: var(--padding-30);
+    }
+
+    .icons {
+        justify-content: space-evenly;
+    }
+
+    .icons i {
+        font-size: 30px;
+    }
+
+    .info .p {
+        text-align: left;
+    }
+
+    .info .p1 {
+        text-align: left;
+    }
+
+    .form h3 {
+        text-align: left;
+    }
+
+    .contentForm {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Finaliza Sección Formulario de Contacto */
+}

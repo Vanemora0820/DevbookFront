@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/LogoDevBook.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/registro.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <div class="contenedorPrincipalApp">
+        <div class="register-container">
+            <img src="../img/LogoDevBook.png" alt="Logo" class="logo">
+            <div>
+                <h1>Crea una cuenta</h1>
+                <p>Ingrese su correo electrónico para registrarse en esta aplicación</p>
+                <div class="doubleForm">
+                    <form id="register-form-part1">
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" placeholder="email@email.com">
+                            <label for="email"></label>
+                        </div>
+                        <button type="input" id="next-button">Registrar</button>
+                        <a class="login" href="/views/ingreso.html">Iniciar Sesión</a>
+                        <section class="icons">
+                            <a href="https://www.linkedin.com/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                            <a href="https://www.google.com.co/" target="_blank"><i class='bx bxl-google'></i></a>
+                            <a href="https://github.com/" target="_blank"><i class='bx bxl-github'></i></a>
+                            <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        </section>
+                        <p>Al hacer clic en Continuar, acepta nuestros Términos de servicio y Política de privacidad</p>
+                    </form>
+
+                    <form id="register-form-part2">
+                        <div class="input-group">
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+                        </div>
+                        <div class="input-group">
+                            <input type="password" id="password" name="password" placeholder="Contraseña">
+                        </div>
+                        <div class="input-group">
+                            <div class="form-group">
+                                <select id="country" name="country">
+                                    <option value="">Seleccione un país</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <input type="phone" id="phone" name="phone" placeholder="Teléfono">
+                            </div>
+                            <div class="form-group">
+                                <select id="gender" name="gender">
+                                    <option value="">Seleccione un género</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="date" id="birthday" name="birthday">
+                            </div>
+                            <div class="form-group">
+                                <select id="role" name="role">
+                                    <option value="">Seleccione un rol</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select id="stack" name="stack">
+                                    <option value="">Seleccione un stack</option>
+                                </select>
+                                <button type="submit">Guardar</button>
+                                <button id="btnCancelResgister">Cancelar</button>
+                                <p>Al hacer clic en guardar, acepta nuestros Términos de servicio y Política de
+                                    privacidad</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modalErrorContainer" id="movalValidations">
+            <div class="modalValidations" id="infoError">Error en alguna validación</div>
+        </div>
+    </div>
+    <script src="../js/registro.js" type="module"></script>
+</body>
+
+</html>

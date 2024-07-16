@@ -1,0 +1,168 @@
+@import url(./styles.css);
+
+.register-container img.logo {
+    width: 300px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.register-container {
+    background-color: var(--oscuro-400);
+    padding: 20px;
+    width: 90%;
+    min-height: 100vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--padding-10);
+    margin: auto;
+}
+
+.register-container h1 {
+    margin-bottom: 20px;
+}
+
+.register-container p {
+    font-size: 16px;
+    color: rgba(201, 201, 194, 0.836);
+    padding: 10px;
+}
+
+#register-form-part1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--padding-10);
+}
+
+#register-form-part2 {
+    display: none;
+    flex-direction: column;
+    gap: var(--padding-10);
+    padding: var(--padding-10);
+
+}
+
+.doubleForm {
+    position: relative;
+    width: 100%;
+}
+
+.input-group {
+    position: relative;
+    text-align: left;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--padding-10);
+}
+
+.input-group input {
+    max-width: 300px;
+    width: 100%;
+    padding: var(--padding-10);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+button,
+.login {
+    width: 100%;
+    max-width: 300px;
+    padding: var(--padding-10);
+    background-color: var(--oscuro-300);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+button:hover,
+.login:hover {
+    background-color: #0056b3;
+}
+
+#birthday[type='date'] {
+    color: #808080;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5em;
+    transition: all 0.2s ease-in-out;
+    font-size: 1.5em;
+}
+
+.icons a:hover {
+    color: var(--primario-200);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--padding-10);
+}
+
+.form-group select,
+.form-group input[type="date"] {
+    padding: var(--padding-10);
+    border-radius: 8px;
+    color: #808080;
+    width: 500px;
+    max-width: 300px;
+}
+
+.modalErrorContainer {
+    backdrop-filter: blur(20px);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalValidations {
+    background-color: rgb(255, 179, 179);
+    color: red;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    padding: var(--padding-10);
+}
+
+
+@media (min-width: 744px) {
+
+    .register-container {
+        flex-direction: row;
+    }
+
+    .register-container img.logo {
+        width: 50%;
+    }
+}
